@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Date Night Helper</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <nav>
+        <div class="nav-center pumpkin">
+            <a href="index.html" class="brand-logo" id="nameTag"><strong>DATE NIGHT HELPER</strong></a>
+        </div>
+    </nav>
+    <!-- <p class="question">1. I am a late night person. <br>
+        <a class="waves-effect waves-light btn-small button" onclick="scoreY1('noMeat')">Yes</a>
+        <a class="waves-effect waves-light btn-small button" onclick="scoreN1('meat')">No</a>
+    </p> -->
+    <p class="question">1. I eat meat. <br>
+        <a class="waves-effect waves-light btn-small button" onclick="scoreY1('vegan')">Yes</a>
+        <a class="waves-effect waves-light btn-small button" onclick="scoreN1('noVegan')">No</a>
+    </p>
+    <p class="question">2. I like spicy food. <br>
+        <a class="waves-effect waves-light btn-small button" onclick="scoreY2('spicy')">Yes</a>
+        <a class="waves-effect waves-light btn-small button" onclick="scoreN2('noSpicy')">No</a>
+    </p>
+    <!-- <p class="question">3. I prefer sweet over savory.<br>
+        <a class="waves-effect waves-light btn-small button">Yes</a>
+        <a class="waves-effect waves-light btn-small button">No</a>
+    </p> -->
+    <p class="question">3. I like strong cocktails. <br>
+        <a class="waves-effect waves-light btn-small button" onclick="scoreY3('strong')">Yes</a>
+        <a class="waves-effect waves-light btn-small button" onclick="scoreN3('noStrong')">No</a>
+    </p>
+    <p class="question">4. I like sweet drinks. <br>
+        <a class="waves-effect waves-light btn-small button" onclick="scoreY4('sweet')">Yes</a>
+        <a class="waves-effect waves-light btn-small button" onclick="scoreY4('noSweet')">No</a>
+    </p>
+    <!-- <p class="question">6. Shaken, not stirred: <br>
+        <a class="waves-effect waves-light btn-small button">Yes</a>
+        <a class="waves-effect waves-light btn-small button">No</a>
+    </p> -->
+    <!-- <p class="question">11. I like slow music. <br>
+        <a class="waves-effect waves-light btn-small button">Yes</a>
+        <a class="waves-effect waves-light btn-small button">No</a>
+    </p> -->
+    <p class="question">5. I like music I can dance to. <br>
+        <a class="waves-effect waves-light btn-small button" onclick="scoreY5('dance')">Yes</a>
+        <a class="waves-effect waves-light btn-small button" onclick="scoreN5('noDance')">No</a>
+    </p>
+    <p class="question">6. I like modern artists. <br>
+        <a class="waves-effect waves-light btn-small button" onclick="scoreY6('modern')">Yes</a>
+        <a class="waves-effect waves-light btn-small button" onclick="scoreN6('noModern')">No</a>
+    </p>
+    <p>
+        <button class="waves-effect waves-light btn-small button" type="submit" id="resultsCalc"
+            onclick="scoreTotal()">See Results</button>
+    </p>
+    <hr>
+    <div class="row center-cols center-align hidden">
+        <div class="col m3">
+            <div class="card darkRed">
+                <div class="card-image">
+                    <img src="https://materializecss.com/images/sample-1.jpg">
+                    <span class="card-title">Food</span>
+                </div>
+                <div class="card-content">
+                    <p class="recipe-content"></p>
+                </div>
+            </div>
+        </div>
+        <div class="col m3">
+            <div class="card darkRed">
+                <div class="card-image">
+                    <img src="https://materializecss.com/images/sample-1.jpg">
+                    <span class="card-title">Cocktail</span>
+                </div>
+                <div class="card-content">
+                    <p class="cocktail-content"></p>
+                </div>
+            </div>
+        </div>
+        <div class="col m3">
+            <div class="card darkRed">
+                <div class="card-image">
+                    <img src="https://materializecss.com/images/sample-1.jpg">
+                    <span class="card-title">Music</span>
+                </div>
+                <div class="card-content">
+                    <p class="music-content"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <footer class="page-footer pumpkin">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">Footer Content</h5>
+                    <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer
+                        content.</p>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                    <h5 class="white-text">Links</h5>
+                    <ul>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                © Made with Love by Julie's Awesome App Team
+            </div>
+        </div>
+    </footer>
+</body>

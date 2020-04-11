@@ -1,0 +1,52 @@
+/* Base Settings */
+
+.question {
+    padding-left: 40px;
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  background-color: #c5283d;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+.center-cols > .col {
+  float: none;
+  display: inline-block; 
+  text-align: initial; 
+}
+
+/* Cameron Adjusments */
+
+p {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+
+hr {
+    padding: 0.5rem;
+    width: 108rem;
+    background-color: #ffc857;
+}
+
+.button {
+    background-color: #255f85;
+}
+
+.pumpkin {
+    background-color: #e9724c;
+}
+
+.darkRed {
+    background-color: #481d24;
+}
+
+#nameTag {
+    margin-left: 39rem;   
+}
