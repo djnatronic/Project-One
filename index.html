@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<body>
+    <div >
+        <div class="DarkBackground">
+            <h1 class="DarkBackground CenterText">Weather App</h1>
+        </div>
+    </div>
+    <div>
+        <div>
+            <h3 id="Search">Search for a city:</h3>
+         
+        </div>
+        <div>
+            <input id="SearchBox" type="text"   placeholder="Search..">
+            <button type="submit" onclick="CitySearch()"><i class="fa fa-search"></i></button>
+            <ul id="CityList">
+                <li onclick="CitySearch()"><a href="#">New York</a></li>
+                <li onclick="CitySearch()"><a href="#">Seattle</a></li>
+
+            </ul>
+               <div class="CurrentConditions">
+                <h1>
+                    Current Conditions
+                </h1> 
+            </div>
+        </div>
+        
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

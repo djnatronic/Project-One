@@ -1,0 +1,13 @@
+.DarkBackground{
+    background-color: black;
+    color: white;
+    
+}
+
+.CenterText{
+    margin-left: 40%;
+}
+
+.CurrentConditions{
+    float: left; 
+}
