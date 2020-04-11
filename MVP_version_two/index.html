@@ -8,6 +8,8 @@
     <title>Date Night Helper</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" href="./assets/style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="./assets/brainstormTestScript.js"></script>
 </head>
 
 <body>
@@ -17,14 +19,14 @@
         </div>
     </nav>
     <p class="question">1. I am a late night person. <br>
-        <a class="waves-effect waves-light btn-small button">Yes</a>
-        <a class="waves-effect waves-light btn-small button">No</a>
+        <a class="waves-effect waves-light btn-small button" onclick="scoreY1('noMeat')">Yes</a>
+        <a class="waves-effect waves-light btn-small button" onclick="scoreN1('meat')">No</a>
     </p>
     <p class="question">2. I eat meat. <br>
-        <a class="waves-effect waves-light btn-small button">Yes</a>
-        <a class="waves-effect waves-light btn-small button">No</a>
+        <a class="waves-effect waves-light btn-small button" onclick="scoreY2('vegan')">Yes</a>
+        <a class="waves-effect waves-light btn-small button" onclick="scoreN2('noVegan')">No</a>
     </p>
-    <p class="question">3. I like spicy food. <br>
+    <!-- <p class="question">3. I like spicy food. <br>
         <a class="waves-effect waves-light btn-small button">Yes</a>
         <a class="waves-effect waves-light btn-small button">No</a>
     </p>
@@ -75,6 +77,9 @@
     <p class="question">15. I prefer music with no lyrics. <br>
         <a class="waves-effect waves-light btn-small button">yes</a>
         <a class="waves-effect waves-light btn-small button">no</a>
+    </p> -->
+    <p>
+    <button class="waves-effect waves-light btn-small button" type="submit" id="resultsCalc" onclick="scoreTotal()">See Results</button>
     </p>
     <hr>
     <div class="row center-cols center-align hidden">
