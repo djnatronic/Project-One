@@ -126,6 +126,27 @@ function scoreTotal (scoreTotal) {
 
 }
 
+// pixabey AJAX call //
+
+    var APIKey = "16049411-2343c269bd40939b11788f149";
+
+    var foodName = "roast beef"
+
+    var queryURL = "https://pixabay.com/api/?key=" + APIKey + "&q=" + foodName + "&image_type=photo";
+
+
+    $.ajax({
+      url: queryURL,
+      method: "GET"
+    }).then(function(response) {
+        console.log(response)
+
+        $("#foodImg").attr("src", response.hits[0].webformatURL)
+    });
+
+
+
+
 // added content
 
 // function CitySearch(scoreTotal){

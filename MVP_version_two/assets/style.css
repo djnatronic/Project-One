@@ -80,3 +80,8 @@ label {
 #nameTag {
     margin-left: 46rem;   
 }
+
+#pixabay {
+    max-width: 100px;
+    max-height: 75px;
+}
