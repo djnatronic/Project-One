@@ -19,36 +19,36 @@
         </div>
     </nav>
     <p class="question">1. Do you like to stay up late? <br>
-        <a class="waves-effect waves-light btn-small buttonYes" onclick="scoreY1('chicken')">Yes</a>
-        <a class="waves-effect waves-light btn-small buttonNo" onclick="scoreN1('tofu')">No</a>
+        <a class="waves-effect waves-light btn-small buttonYes" onclick="score('chicken', 0)">Yes</a>
+        <a class="waves-effect waves-light btn-small buttonNo" onclick="score('tofu', 0)">No</a>
     </p>
     <p class="question">2. Are you superstitious? <br>
-        <a class="waves-effect waves-light btn-small buttonYes" onclick="scoreY2('beef')">Yes</a>
-        <a class="waves-effect waves-light btn-small buttonNo" onclick="scoreN2('fish')">No</a>
+        <a class="waves-effect waves-light btn-small buttonYes" onclick="score('beef', 1)">Yes</a>
+        <a class="waves-effect waves-light btn-small buttonNo" onclick="score('fish', 1)">No</a>
     </p>
     <p class="question">3. Do you like long walks on the beach? <br>
-        <a class="waves-effect waves-light btn-small buttonYes" onclick="scoreY3('tofu')">Yes</a>
-        <a class="waves-effect waves-light btn-small buttonNo" onclick="scoreN3('chicken')">No</a>
+        <a class="waves-effect waves-light btn-small buttonYes" onclick="score('tofu', 2)">Yes</a>
+        <a class="waves-effect waves-light btn-small buttonNo" onclick="score('chicken', 2)">No</a>
     </p>
     <p class="question">4. Do you dance in the car when no one is watching? <br>
-        <a class="waves-effect waves-light btn-small buttonYes" onclick="scoreY4('beef')">Yes</a>
-        <a class="waves-effect waves-light btn-small buttonNo" onclick="scoreN4('fish')">No</a>
+        <a class="waves-effect waves-light btn-small buttonYes" onclick="score('beef', 3)">Yes</a>
+        <a class="waves-effect waves-light btn-small buttonNo" onclick="score('fish', 3)">No</a>
     </p>
     <p class="question">5. Do you know how to ride a bike? <br>
-        <a class="waves-effect waves-light btn-small buttonYes" onclick="scoreY5('beef')">Yes</a>
-        <a class="waves-effect waves-light btn-small buttonNo" onclick="scoreN5('tofu')">No</a>
+        <a class="waves-effect waves-light btn-small buttonYes" onclick="score('beef', 4)">Yes</a>
+        <a class="waves-effect waves-light btn-small buttonNo" onclick="score('tofu', 4)">No</a>
     </p>
     <p class="question">6. Have you sent a text to the wrong person? <br>
-        <a class="waves-effect waves-light btn-small buttonYes" onclick="scoreY6('fish')">Yes</a>
-        <a class="waves-effect waves-light btn-small buttonNo" onclick="scoreN6('chicken')">No</a>
+        <a class="waves-effect waves-light btn-small buttonYes" onclick="score('fish', 5)">Yes</a>
+        <a class="waves-effect waves-light btn-small buttonNo" onclick="score('chicken', 5)">No</a>
     </p>
     <p class="question">7. Do you sing in the shower? <br>
-        <a class="waves-effect waves-light btn-small buttonYes" onclick="scoreY7('fish')">Yes</a>
-        <a class="waves-effect waves-light btn-small buttonNo" onclick="scoreN7('tofu')">No</a>
+        <a class="waves-effect waves-light btn-small buttonYes" onclick="score('fish', 6)">Yes</a>
+        <a class="waves-effect waves-light btn-small buttonNo" onclick="score('tofu', 6)">No</a>
     </p>
     <p class="question">8. Do you eat all the free samples at Costco? <br>
-        <a class="waves-effect waves-light btn-small buttonYes" onclick="scoreY8('chicken')">Yes</a>
-        <a class="waves-effect waves-light btn-small buttonNo" onclick="scoreN8('beef')">No</a>
+        <a class="waves-effect waves-light btn-small buttonYes" onclick="score('chicken', 7)">Yes</a>
+        <a class="waves-effect waves-light btn-small buttonNo" onclick="score('beef', 7)">No</a>
     </p>
     <p>
         <button class="waves-effect waves-light btn-small buttonRes" type="submit" id="resultsCalc" onclick="scoreTotal()">See Results</button>
@@ -59,8 +59,8 @@
         <div class="col m3">
             <div class="card darkRed">
                 <div class="card-image">
-                    <img src="https://materializecss.com/images/sample-1.jpg">
-                    <span class="card-title">Food</span>
+                    <img src="https://materializecss.com/images/sample-1.jpg" id="foodImg">
+                    <span class="card-title" id="foodTitle">Food</span>
                 </div>
                 <div class="card-content">
                     <p class="recipe-content"></p>
@@ -70,8 +70,8 @@
         <div class="col m3">
             <div class="card darkRed">
                 <div class="card-image">
-                    <img src="https://materializecss.com/images/sample-1.jpg">
-                    <span class="card-title">Cocktail</span>
+                    <img src="https://materializecss.com/images/sample-1.jpg" id="drinkImg">
+                    <span class="card-title" id="drinkTitle">Cocktail</span>
                 </div>
                 <div class="card-content">
                     <p class="cocktail-content"></p>
