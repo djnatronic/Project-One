@@ -6,8 +6,7 @@ var resultsArr = []
 var beef = array[0]
 var chicken = array[1]
 var tofu = array[2]
-var veggies = array[3]
-var vegan = array[4]
+var fish = array[3]
 
 var yes1 = 0
 var no1 = 0
@@ -220,29 +219,90 @@ function scoreN6(no6) {
     return (resultsArr)
 }
 
-function scoreTotal (scoreTotal) {
+var testArray1 = ["beef", "chicken", "beef", "lamb"]
+var testArray2 = ["chicken", "beef", "chicken","lamb"]
+var testArray3 = ["lamb", "chicken", "beef", "lamb"]
+console.log(array)
+var resultsArr = []
+var array = testArray1
 
-    console.log(" " + scoreY1() + " " + scoreY2() + " " + scoreN1() + " " + scoreN2() + " ")
-    console.log(scoreTotal)
+beefCount = 0
+chickenCount = 0
+fishCount = 0 
+var count = 0;
 
-    console.log(scoreY1())
+for(var i = 0; i < array.length; ++i){
+    if(array[i] === 'beef'){
+        beefCount++;}
+    if (array[i] === 'chicken'){
+        chickenCount++;}
+    if (array[i] === 'fish'){
+        fish++;}
+}
+if(beefCount > chickenCount && beefCount > lambCount){
+    console.log("beefCount wins!")
+}
+if(chickenCount > beefCount && chickenCount > lambCount){
+    console.log("chickenCount wins!")
+}
+if(fishCount > chickenCount && lambCount > beefCount){
+    console.log("fishCount wins!")
+}
 
+
+//Make profiles of users
+//They get a score
+//Match them with a profile based on score
+//Each profile gets one recipe, one drink, one music
+var currentProfile;
+
+function loadMatchProfile(score) {
+    if (score > 0 && score < 10){
+        currentProfile = profiles.one
+    }
+    else if (score > 11 && score < 20){
+        currentProfile = profiles.two
+    }
+}
+
+var profiles = {
+    one:{
+        ingredients: ["onions","chicken"]
+    },
+    two:{
+        ingredients: ["beef", "garlic"]
+    },
+    three:{
+        ingredients: ["peppers", "fish"]
+    },
+}
+
+function createRecipePuppyURL(ingredients) {
+    return `http://www.recipepuppy.com/api/?i=${ingredients.join(",")}`
+}
+
+function fetchRecipes(ingredients) {
     var settings = {
         "async": true,
         "crossDomain": true,
-        "url": "https://tasty.p.rapidapi.com/recipes/auto-complete?prefix=" + scoreY1(),
+        "url": `https://recipe-puppy.p.rapidapi.com/?p=1&i=${ingredients.join(",")}`,
         "method": "GET",
         "headers": {
-          "x-rapidapi-host": "tasty.p.rapidapi.com",
-          "x-rapidapi-key": "3eb55b5bc9mshcd18231da3d1013p112c4cjsn6acd3db0b1c9"
+            "x-rapidapi-host": "recipe-puppy.p.rapidapi.com",
+            "x-rapidapi-key": "9ec1115318msh77b76d228bf0005p19e2b5jsnf6c122346c33"
         }
-      }
-      
-      $.ajax(settings).done(function (response) {
-        console.log(response);
-      });
-
+    }
+    return $.ajax(settings)
 }
+
+fetchRecipes(currentprofile.ingredients)
+    .then(function(response){
+       return JSON.parse(response)
+    })
+    .then(data => {
+        console.log(data)
+    })
+
 
 // added content
 

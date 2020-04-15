@@ -18,50 +18,44 @@
             <a href="index.html" class="brand-logo" id="nameTag"><strong>DATE NIGHT HELPER</strong></a>
         </div>
     </nav>
-    <!-- <p class="question">1. I am a late night person. <br>
-        <a class="waves-effect waves-light btn-small button" onclick="scoreY1('noMeat')">Yes</a>
-        <a class="waves-effect waves-light btn-small button" onclick="scoreN1('meat')">No</a>
-    </p> -->
-    <p class="question">1. I eat meat. <br>
-        <a class="waves-effect waves-light btn-small button" onclick="scoreY1('vegan')">Yes</a>
-        <a class="waves-effect waves-light btn-small button" onclick="scoreN1('noVegan')">No</a>
+    <p class="question">1. Do you like to stay up late? <br>
+        <a class="waves-effect waves-light btn-small button" onclick="score('chicken', 0)">Yes</a>
+        <a class="waves-effect waves-light btn-small button" onclick="score('tofu', 0)">No</a>
     </p>
-    <p class="question">2. I like spicy food. <br>
-        <a class="waves-effect waves-light btn-small button" onclick="scoreY2('spicy')">Yes</a>
-        <a class="waves-effect waves-light btn-small button" onclick="scoreN2('noSpicy')">No</a>
+    <p class="question">2. Are you superstitious? <br>
+        <a class="waves-effect waves-light btn-small button" onclick="score('beef', 1)">Yes</a>
+        <a class="waves-effect waves-light btn-small button" onclick="score('fish', 1)">No</a>
     </p>
-    <!-- <p class="question">3. I prefer sweet over savory.<br>
-        <a class="waves-effect waves-light btn-small button">Yes</a>
-        <a class="waves-effect waves-light btn-small button">No</a>
-    </p> -->
-    <p class="question">3. I like strong cocktails. <br>
-        <a class="waves-effect waves-light btn-small button" onclick="scoreY3('strong')">Yes</a>
-        <a class="waves-effect waves-light btn-small button" onclick="scoreN3('noStrong')">No</a>
+    <p class="question">3. Do you like long walks on the beach? <br>
+        <a class="waves-effect waves-light btn-small button" onclick="score('tofu', 2)">Yes</a>
+        <a class="waves-effect waves-light btn-small button" onclick="score('chicken', 2)">No</a>
     </p>
-    <p class="question">4. I like sweet drinks. <br>
-        <a class="waves-effect waves-light btn-small button" onclick="scoreY4('sweet')">Yes</a>
-        <a class="waves-effect waves-light btn-small button" onclick="scoreY4('noSweet')">No</a>
+    <p class="question">4. Do you dance in the car when no one is watching? <br>
+        <a class="waves-effect waves-light btn-small button" onclick="score('beef', 3)">Yes</a>
+        <a class="waves-effect waves-light btn-small button" onclick="score('fish', 3)">No</a>
     </p>
-    <!-- <p class="question">6. Shaken, not stirred: <br>
-        <a class="waves-effect waves-light btn-small button">Yes</a>
-        <a class="waves-effect waves-light btn-small button">No</a>
-    </p> -->
-    <!-- <p class="question">11. I like slow music. <br>
-        <a class="waves-effect waves-light btn-small button">Yes</a>
-        <a class="waves-effect waves-light btn-small button">No</a>
-    </p> -->
-    <p class="question">5. I like music I can dance to. <br>
-        <a class="waves-effect waves-light btn-small button" onclick="scoreY5('dance')">Yes</a>
-        <a class="waves-effect waves-light btn-small button" onclick="scoreN5('noDance')">No</a>
+    <p class="question">5. Do you know how to ride a bike? <br>
+        <a class="waves-effect waves-light btn-small button" onclick="score('beef', 4)">Yes</a>
+        <a class="waves-effect waves-light btn-small button" onclick="score('tofu', 4)">No</a>
     </p>
-    <p class="question">6. I like modern artists. <br>
-        <a class="waves-effect waves-light btn-small button" onclick="scoreY6('modern')">Yes</a>
-        <a class="waves-effect waves-light btn-small button" onclick="scoreN6('noModern')">No</a>
+    <p class="question">6. Have you sent a text to the wrong person? <br>
+        <a class="waves-effect waves-light btn-small button" onclick="score('fish', 5)">Yes</a>
+        <a class="waves-effect waves-light btn-small button" onclick="score('chicken', 5)">No</a>
     </p>
+    <p class="question">7. Do you sing in the shower? <br>
+        <a class="waves-effect waves-light btn-small button" onclick="score('fish', 6)">Yes</a>
+        <a class="waves-effect waves-light btn-small button" onclick="score('tofu', 6)">No</a>
+    </p>
+    <p class="question">8. Do you eat all the free samples at Costco? <br>
+        <a class="waves-effect waves-light btn-small button" onclick="score('chicken', 7)">Yes</a>
+        <a class="waves-effect waves-light btn-small button" onclick="score('beef', 7)">No</a>
+    </p>
+    <br>
     <p>
         <button class="waves-effect waves-light btn-small button" type="submit" id="resultsCalc"
             onclick="scoreTotal()">See Results</button>
     </p>
+    </br>
     <hr>
     <div class="row center-cols center-align hidden">
         <div class="col m3">
