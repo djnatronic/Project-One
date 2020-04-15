@@ -18,69 +18,42 @@
             <a href="index.html" class="brand-logo" id="nameTag"><strong>DATE NIGHT HELPER</strong></a>
         </div>
     </nav>
-    <p class="question">1. I am a late night person. <br>
-        <a class="waves-effect waves-light btn-small button" onclick="scoreY1('noMeat')">Yes</a>
-        <a class="waves-effect waves-light btn-small button" onclick="scoreN1('meat')">No</a>
+    <p class="question">1. Do you like to stay up late? <br>
+        <a class="waves-effect waves-light btn-small buttonYes" onclick="scoreY1('chicken')">Yes</a>
+        <a class="waves-effect waves-light btn-small buttonNo" onclick="scoreN1('tofu')">No</a>
     </p>
-    <p class="question">2. I eat meat. <br>
-        <a class="waves-effect waves-light btn-small button" onclick="scoreY2('vegan')">Yes</a>
-        <a class="waves-effect waves-light btn-small button" onclick="scoreN2('noVegan')">No</a>
+    <p class="question">2. Are you superstitious? <br>
+        <a class="waves-effect waves-light btn-small buttonYes" onclick="scoreY2('beef')">Yes</a>
+        <a class="waves-effect waves-light btn-small buttonNo" onclick="scoreN2('fish')">No</a>
     </p>
-    <!-- <p class="question">3. I like spicy food. <br>
-        <a class="waves-effect waves-light btn-small button">Yes</a>
-        <a class="waves-effect waves-light btn-small button">No</a>
+    <p class="question">3. Do you like long walks on the beach? <br>
+        <a class="waves-effect waves-light btn-small buttonYes" onclick="scoreY3('tofu')">Yes</a>
+        <a class="waves-effect waves-light btn-small buttonNo" onclick="scoreN3('chicken')">No</a>
     </p>
-    <p class="question">4. I prefer savory over sweet.<br>
-        <a class="waves-effect waves-light btn-small button">Yes</a>
-        <a class="waves-effect waves-light btn-small button">No</a>
+    <p class="question">4. Do you dance in the car when no one is watching? <br>
+        <a class="waves-effect waves-light btn-small buttonYes" onclick="scoreY4('beef')">Yes</a>
+        <a class="waves-effect waves-light btn-small buttonNo" onclick="scoreN4('fish')">No</a>
     </p>
-    <p class="question">5. Here is the fifth question. <br>
-        <a class="waves-effect waves-light btn-small button">Yes</a>
-        <a class="waves-effect waves-light btn-small button">No</a>
+    <p class="question">5. Do you know how to ride a bike? <br>
+        <a class="waves-effect waves-light btn-small buttonYes" onclick="scoreY5('beef')">Yes</a>
+        <a class="waves-effect waves-light btn-small buttonNo" onclick="scoreN5('tofu')">No</a>
     </p>
-    <p class="question">6. I like strong cocktails. <br>
-        <a class="waves-effect waves-light btn-small button">Yes</a>
-        <a class="waves-effect waves-light btn-small button">No</a>
+    <p class="question">6. Have you sent a text to the wrong person? <br>
+        <a class="waves-effect waves-light btn-small buttonYes" onclick="scoreY6('fish')">Yes</a>
+        <a class="waves-effect waves-light btn-small buttonNo" onclick="scoreN6('chicken')">No</a>
     </p>
-    <p class="question">7. I like sweet drinks. <br>
-        <a class="waves-effect waves-light btn-small button">Yes</a>
-        <a class="waves-effect waves-light btn-small button">No</a>
+    <p class="question">7. Do you sing in the shower? <br>
+        <a class="waves-effect waves-light btn-small buttonYes" onclick="scoreY7('fish')">Yes</a>
+        <a class="waves-effect waves-light btn-small buttonNo" onclick="scoreN7('tofu')">No</a>
     </p>
-    <p class="question">8. Shaken, not stirred: <br>
-        <a class="waves-effect waves-light btn-small button">Yes</a>
-        <a class="waves-effect waves-light btn-small button">No</a>
+    <p class="question">8. Do you eat all the free samples at Costco? <br>
+        <a class="waves-effect waves-light btn-small buttonYes" onclick="scoreY8('chicken')">Yes</a>
+        <a class="waves-effect waves-light btn-small buttonNo" onclick="scoreN8('beef')">No</a>
     </p>
-    <p class="question">9. Here is the fifth question. <br>
-        <a class="waves-effect waves-light btn-small button">yes</a>
-        <a class="waves-effect waves-light btn-small button">no</a>
-    </p>
-    <p class="question">10. Here is the fifth question. <br>
-        <a class="waves-effect waves-light btn-small button">yes</a>
-        <a class="waves-effect waves-light btn-small button">no</a>
-    </p>
-    <p class="question">11. I like slow music. <br>
-        <a class="waves-effect waves-light btn-small button">yes</a>
-        <a class="waves-effect waves-light btn-small button">no</a>
-    </p>
-    <p class="question">12. I like foreign music. <br>
-        <a class="waves-effect waves-light btn-small button">yes</a>
-        <a class="waves-effect waves-light btn-small button">no</a>
-    </p>
-    <p class="question">13. I like music I can dance to. <br>
-        <a class="waves-effect waves-light btn-small button">yes</a>
-        <a class="waves-effect waves-light btn-small button">no</a>
-    </p>
-    <p class="question">14. I like modern artists. <br>
-        <a class="waves-effect waves-light btn-small button">yes</a>
-        <a class="waves-effect waves-light btn-small button">no</a>
-    </p>
-    <p class="question">15. I prefer music with no lyrics. <br>
-        <a class="waves-effect waves-light btn-small button">yes</a>
-        <a class="waves-effect waves-light btn-small button">no</a>
-    </p> -->
     <p>
-    <button class="waves-effect waves-light btn-small button" type="submit" id="resultsCalc" onclick="scoreTotal()">See Results</button>
+        <button class="waves-effect waves-light btn-small buttonRes" type="submit" id="resultsCalc" onclick="scoreTotal()">See Results</button>
     </p>
+    <br>
     <hr>
     <div class="row center-cols center-align hidden">
         <div class="col m3">
@@ -105,7 +78,7 @@
                 </div>
             </div>
         </div>
-        <div class="col m3">
+        <!-- <div class="col m3">
             <div class="card darkRed">
                 <div class="card-image">
                     <img src="https://materializecss.com/images/sample-1.jpg">
@@ -115,7 +88,7 @@
                     <p class="music-content"></p>
                 </div>
             </div>
-        </div>
+        </div> -->
     </div>
     </div>
     <footer class="page-footer pumpkin">
