@@ -4,7 +4,7 @@ Group: Nathan, Cameron and Julie.<br/>
 # Date Night Helper
 Project Acceptance Criteria/User Story:<br/> 
 
-MVP<br/>
+## MVP<br/>
 
 A user who is stuck at home needs to find information:<br/> 
 WHEN the app is opened.<br/>
