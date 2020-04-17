@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Date Night Helper</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="./assets/style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="./assets/brainstormTestScript.js"></script>
+</head>
+
+<body>
+    <nav>
+        <div class="nav-center pumpkin">
+            <a href="index.html" class="brand-logo" id="nameTag"><strong>DATE NIGHT HELPER</strong></a>
+        </div>
+    </nav>
+    <p class="question">1. Do you like to stay up late? <br>
+        <a class="waves-effect waves-light btn-small buttonYes" onclick="score('chicken', 0)">Yes</a>
+        <a class="waves-effect waves-light btn-small buttonNo" onclick="score('tofu', 0)">No</a>
+    </p>
+    <p class="question">2. Are you superstitious? <br>
+        <a class="waves-effect waves-light btn-small buttonYes" onclick="score('beef', 1)">Yes</a>
+        <a class="waves-effect waves-light btn-small buttonNo" onclick="score('fish', 1)">No</a>
+    </p>
+    <p class="question">3. Do you like long walks on the beach? <br>
+        <a class="waves-effect waves-light btn-small buttonYes" onclick="score('tofu', 2)">Yes</a>
+        <a class="waves-effect waves-light btn-small buttonNo" onclick="score('chicken', 2)">No</a>
+    </p>
+    <p class="question">4. Do you dance in the car when no one is watching? <br>
+        <a class="waves-effect waves-light btn-small buttonYes" onclick="score('beef', 3)">Yes</a>
+        <a class="waves-effect waves-light btn-small buttonNo" onclick="score('fish', 3)">No</a>
+    </p>
+    <p class="question">5. Do you know how to ride a bike? <br>
+        <a class="waves-effect waves-light btn-small buttonYes" onclick="score('beef', 4)">Yes</a>
+        <a class="waves-effect waves-light btn-small buttonNo" onclick="score('tofu', 4)">No</a>
+    </p>
+    <p class="question">6. Have you sent a text to the wrong person? <br>
+        <a class="waves-effect waves-light btn-small buttonYes" onclick="score('fish', 5)">Yes</a>
+        <a class="waves-effect waves-light btn-small buttonNo" onclick="score('chicken', 5)">No</a>
+    </p>
+    <p class="question">7. Do you sing in the shower? <br>
+        <a class="waves-effect waves-light btn-small buttonYes" onclick="score('fish', 6)">Yes</a>
+        <a class="waves-effect waves-light btn-small buttonNo" onclick="score('tofu', 6)">No</a>
+    </p>
+    <p class="question">8. Do you eat all the free samples at Costco? <br>
+        <a class="waves-effect waves-light btn-small buttonYes" onclick="score('chicken', 7)">Yes</a>
+        <a class="waves-effect waves-light btn-small buttonNo" onclick="score('beef', 7)">No</a>
+    </p>
+    <p>
+        <button class="waves-effect waves-light btn-small buttonRes" type="submit" id="resultsCalc" onclick="scoreTotal()">See Results</button>
+    </p>
+    <br>
+    <hr>
+    <div class="row center-cols center-align hidden">
+        <div class="col m3">
+            <div class="card darkRed">
+                <div class="card-image">
+                    <img src="https://materializecss.com/images/sample-1.jpg" id="foodImg">
+                </div>
+                <div class="card-content">
+                    <span class="card-title" id="foodTitle">Food</span>
+                    <p class="recipe-content"></p>
+                </div>
+            </div>
+        </div>
+        <div class="col m3">
+            <div class="card darkRed">
+                <div class="card-image">
+                    <img src="https://materializecss.com/images/sample-1.jpg" id="drinkImg">                  
+                </div>
+                <div class="card-content">
+                    <span class="card-title" id="drinkTitle">Cocktail</span>
+                    <p class="cocktail-content"></p>
+                </div>
+            </div>
+        </div>
+        <div class="col m3">
+            <div class="card darkRed">
+                <div class="card-image">
+                    <img src="https://materializecss.com/images/sample-1.jpg">
+                </div>
+                <div class="card-content">
+                    <span class="card-title">Music</span>
+                    <p class="music-content"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <footer class="page-footer pumpkin">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">Footer Content</h5>
+                    <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer
+                        content.</p>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                    <h5 class="white-text">Links</h5>
+                    <ul>
+                        <a href="https://pixabay.com/">
+                            <img src="https://pixabay.com/static/img/public/medium_rectangle_a.png" alt="Pixabay" id="pixabay">
+                        </a>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                © Made with Love by Julie's Awesome App Team
+            </div>
+        </div>
+    </footer>
+</body>
