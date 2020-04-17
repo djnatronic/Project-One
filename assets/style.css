@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Codystar:300&display=swap');
 
 body {
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   background: black;
-   background-image: url('data:image/svg+xml,%3Csvg width="42" height="44" viewBox="0 0 42 44" xmlns="http://www.w3.org/2000/svg"%3E%3Cg id="Page-1" fill="none" fill-rule="evenodd"%3E%3Cg id="brick-wall" fill="%239C92AC" fill-opacity="0.4"%3E%3Cpath d="M0 0h42v44H0V0zm1 1h40v20H1V1zM0 23h20v20H0V23zm22 0h20v20H22V23z"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: black;
+    background-image: url('data:image/svg+xml,%3Csvg width="42" height="44" viewBox="0 0 42 44" xmlns="http://www.w3.org/2000/svg"%3E%3Cg id="Page-1" fill="none" fill-rule="evenodd"%3E%3Cg id="brick-wall" fill="%239C92AC" fill-opacity="0.4"%3E%3Cpath d="M0 0h42v44H0V0zm1 1h40v20H1V1zM0 23h20v20H0V23zm22 0h20v20H22V23z"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');
 }
 
 .neons {
@@ -27,7 +27,7 @@ body {
       color: #fff;
     text-shadow: 0 0 10px #00fff2, 0 0 20px #00fff2, 0 0 30px #00fff2, 0 0 40px #00fff2, 0 0 50px #00fff2, 0 0 60px #00fff2, 0 0 70px #00fff2, 0 0 90px #00fff2;
   }
-  
+
   to {
      color: gray;
     text-shadow: 0 0 20px #00fff2, 0 0 30px #00fff2, 0 0 40px #00fff2, 0 0 50px #00fff2, 0 0 60px #00fff2, 0 0 70px #00fff2, 0 0 80px #00fff2, 0 1 90px #00fff2;
@@ -61,7 +61,7 @@ hr {
 label {
     margin-left: 1.5rem;
     color: black;
-    
+
 }
 
 .question {
@@ -86,19 +86,10 @@ label {
     padding-right: 5rem;
 }
 
-.buttonNo:active {
-    background-color: #fa03bc;
-}
-
-.buttonYes:active {
-    background-color: rgb(14, 207, 14);
-}
-
 .buttonRes {
     background-color: #255f85;
     padding-left: 5rem;
     padding-right: 5rem;
-    margin-top: 1rem;
     font-weight: bold;
 }
 
@@ -129,3 +120,45 @@ label {
 #nameTag {
     margin-left: 46rem;   
 }
+
+.button {
+    background-color: #255f85;
+  padding: 15px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 12px;
+  width: 100px;
+}
+
+.button1 {
+  color: white;
+  font-weight: bolder;
+  border: 2px solid #e7e7e7;
+}
+
+.button:active,
+.button:focus,
+.button:visited {
+  outline: none;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td,
+th {
+  border: none;
+  padding: 15px;
+  width: 50%;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+} 
