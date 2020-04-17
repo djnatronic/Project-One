@@ -75,8 +75,18 @@ label {
 
 .darkRed {
     background-color: #481d24;
+    max-width: 300px;
+    min-width: 300px;
+    max-height: 400px;
+    min-height: 400px;
+    margin-right: 20rem;
 }
 
 #nameTag {
     margin-left: 46rem;   
+}
+
+#pixabay {
+    max-width: 100px;
+    max-height: 75px;
 }
