@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" href="style.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="script.js"></script>
 </head>
 
 <body>
@@ -52,8 +51,7 @@
     </p>
     <br>
     <p>
-        <button class="waves-effect waves-light btn-small button" type="submit" id="resultsCalc"
-            onclick="scoreTotal()">See Results</button>
+        <button class="waves-effect waves-light btn-large button" type="submit" id="resultsCalc">See Results</button>
     </p>
     </br>
     <hr>
@@ -61,8 +59,8 @@
         <div class="col m3">
             <div class="card darkRed">
                 <div class="card-image">
-                    <img src="https://materializecss.com/images/sample-1.jpg">
-                    <span class="card-title">Food</span>
+                    <img src="https://materializecss.com/images/sample-1.jpg" id="foodImg">
+                    <span class="card-title" id="foodTitle">Food</span>
                 </div>
                 <div class="card-content">
                     <p class="recipe-content"></p>
@@ -72,15 +70,15 @@
         <div class="col m3">
             <div class="card darkRed">
                 <div class="card-image">
-                    <img src="https://materializecss.com/images/sample-1.jpg">
-                    <span class="card-title">Cocktail</span>
+                    <img src="https://materializecss.com/images/sample-1.jpg" id="drinkImg">
+                    <span class="card-title" id="drinkTitle">Cocktail</span>
                 </div>
                 <div class="card-content">
                     <p class="cocktail-content"></p>
                 </div>
             </div>
         </div>
-        <div class="col m3">
+        <!-- <div class="col m3">
             <div class="card darkRed">
                 <div class="card-image">
                     <img src="https://materializecss.com/images/sample-1.jpg">
@@ -90,7 +88,7 @@
                     <p class="music-content"></p>
                 </div>
             </div>
-        </div>
+        </div> -->
     </div>
     </div>
     <footer class="page-footer pumpkin">
@@ -114,4 +112,5 @@
             </div>
         </div>
     </footer>
+    <script src="script.js"></script>
 </body>
