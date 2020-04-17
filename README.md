@@ -1,6 +1,8 @@
 # Project-One
 Group: Nathan, Cameron and Julie.<br/>
 
+Link to application: https://julieritz.github.io/Project-One/
+
 # Date Night Helper
 Project Acceptance Criteria/User Story:<br/> 
 
