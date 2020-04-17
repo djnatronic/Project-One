@@ -23,3 +23,5 @@ GIVEN that the user selects preferences,<br/>
 THEN the app will query additional APIs for options based off of the user preferences.<br/>
 GIVEN that the APIs can be queried,<br/>
 THEN results are pulled and displayed to the user in the app.<br/>
+
+![image](https://user-images.githubusercontent.com/60047114/79530278-c1b07880-8023-11ea-8e68-8864bd963580.png)
