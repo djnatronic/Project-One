@@ -100,6 +100,25 @@ function GetDrink(baseAlcohol) {
         $("#drinkImg").attr("src", response.drinks[DrinkRandom].strDrinkThumb);
         console.log(response.drinks[DrinkRandom].strDrinkThumb)
         $("#drinkTitle").text(response.drinks[DrinkRandom].strDrink);
+        $(".cocktail-content").html("" + response.drinks[DrinkRandom].strIngredient1 + ": " + response.drinks[DrinkRandom].strMeasure1 + "<br>"
+                                       + response.drinks[DrinkRandom].strIngredient2 + ": " + response.drinks[DrinkRandom].strMeasure2 + "<br>"
+                                       + response.drinks[DrinkRandom].strIngredient3 + ": " + response.drinks[DrinkRandom].strMeasure3 + "<br>"
+                                       + response.drinks[DrinkRandom].strIngredient4 + ": " + response.drinks[DrinkRandom].strMeasure4 + "<br>"
+                                       + response.drinks[DrinkRandom].strIngredient5 + ": " + response.drinks[DrinkRandom].strMeasure5 + "<br>"
+                                       + response.drinks[DrinkRandom].strIngredient6 + ": " + response.drinks[DrinkRandom].strMeasure6 + "<br>"
+                                       + response.drinks[DrinkRandom].strIngredient7 + ": " + response.drinks[DrinkRandom].strMeasure7 + "<br>"
+                                       + response.drinks[DrinkRandom].strIngredient8 + ": " + response.drinks[DrinkRandom].strMeasure8 + "<br>"
+                                       + response.drinks[DrinkRandom].strIngredient9 + ": " + response.drinks[DrinkRandom].strMeasure9 + "<br>"
+                                       + response.drinks[DrinkRandom].strIngredient10 + ": " + response.drinks[DrinkRandom].strMeasure10 + "<br>"
+                                       + response.drinks[DrinkRandom].strIngredient11 + ": " + response.drinks[DrinkRandom].strMeasure11 + "<br>"
+                                       + response.drinks[DrinkRandom].strIngredient12 + ": " + response.drinks[DrinkRandom].strMeasure12 + "<br>"
+                                       + response.drinks[DrinkRandom].strIngredient13 + ": " + response.drinks[DrinkRandom].strMeasure13 + "<br>"
+                                       + response.drinks[DrinkRandom].strIngredient14 + ": " + response.drinks[DrinkRandom].strMeasure14 + "<br>"
+                                       + response.drinks[DrinkRandom].strIngredient15 + ": " + response.drinks[DrinkRandom].strMeasure15 + "<br>");
+                                       if ($("<p>") !== null) {
+                                       } else {
+                                        $("<p>").addClass("hide")
+                                       }
     });
 
 }
