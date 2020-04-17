@@ -100,8 +100,20 @@ function GetDrink(baseAlcohol) {
         $("#drinkImg").attr("src", response.drinks[DrinkRandom].strDrinkThumb);
         console.log(response.drinks[DrinkRandom].strDrinkThumb)
         $("#drinkTitle").text(response.drinks[DrinkRandom].strDrink);
-        /* $("#cocktailLink").text(jsonResponse.drinks[DrinkRandom].href); */
 
     });
 
 }
+
+$(".button1").click(function() {
+    var otherButton = this.value == "Yes" ? "No" : "Yes";
+    $(this).css({'background':'#0080FF', 'color':'white'});
+    $(this).siblings(`.button1[value=${otherButton}]`).css({'background':'transparent', 'color':'#808080'});
+    $(this).siblings(".answer").val(this.value);
+  });
+
+
+    });
+
+}
+
