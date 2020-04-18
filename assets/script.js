@@ -5,7 +5,7 @@ var foodArray = []
 var beef = 0
 var chicken = 0
 var tofu = 0
-var fish = 0
+var salmon = 0
 
 
 $("#resultsCalc").on("click", function () {
@@ -16,8 +16,8 @@ $("#resultsCalc").on("click", function () {
         if (foodArray[i] === 'chicken') {
             chicken++;
         }
-        if (foodArray[i] === 'fish') {
-            fish++;
+        if (foodArray[i] === 'salmon') {
+            salmon++;
         }
         if (foodArray[i] === 'tofu') {
             tofu++;
@@ -33,24 +33,25 @@ $("#resultsCalc").on("click", function () {
             $("#foodImg").attr("src", jsonResponse.results[foodRandom].thumbnail);
             $("#foodTitle").text(jsonResponse.results[foodRandom].title);
             $("#foodLink").text(jsonResponse.results[foodRandom].ingredients);
+            $(".recipe-content").html("<a href='" + jsonResponse.results[foodRandom].href + "'>Link to Recipe.</a>")
         })
     GetDrink()
 })
 
 function winnerPick() {
-    if (beef > chicken && beef > fish && beef > tofu) {
+    if (beef > chicken && beef > salmon && beef > tofu) {
         chosenIngredient = "beef"
         chosenAlcohol = "tequila"
     }
-    else if (chicken > beef && chicken > fish && chicken > tofu) {
+    else if (chicken > beef && chicken > salmon && chicken > tofu) {
         chosenIngredient = "chicken"
         chosenAlcohol = "rum"
     }
-    else if (fish > chicken && fish > beef && fish > tofu) {
-        chosenIngredient = "fish"
+    else if (salmon > chicken && salmon > beef && salmon > tofu) {
+        chosenIngredient = "salmon"
         chosenAlcohol = "vodka"
     }
-    else if (tofu > chicken && tofu > beef && tofu > fish) {
+    else if (tofu > chicken && tofu > beef && tofu > salmon) {
         chosenIngredient = "tofu"
         chosenAlcohol = "gin"
     }
@@ -79,6 +80,7 @@ function fetchRecipes(ingredients) {
         }
     }
     return $.ajax(settings)
+
 }
 
 function GetDrink(baseAlcohol) {
@@ -100,6 +102,22 @@ function GetDrink(baseAlcohol) {
         $("#drinkImg").attr("src", response.drinks[DrinkRandom].strDrinkThumb);
         console.log(response.drinks[DrinkRandom].strDrinkThumb)
         $("#drinkTitle").text(response.drinks[DrinkRandom].strDrink);
+        $(".cocktail-content").html("Top three Ingredients:<br>" + response.drinks[DrinkRandom].strIngredient1 + ": " + response.drinks[DrinkRandom].strMeasure1 + "<br>"
+                                       + response.drinks[DrinkRandom].strIngredient2 + ": " + response.drinks[DrinkRandom].strMeasure2 + "<br>"
+                                       + response.drinks[DrinkRandom].strIngredient3 + ": " + response.drinks[DrinkRandom].strMeasure3 + "<br>"
+                                    /*    + response.drinks[DrinkRandom].strIngredient4 + ": " + response.drinks[DrinkRandom].strMeasure4 + "<br>"
+                                       + response.drinks[DrinkRandom].strIngredient5 + ": " + response.drinks[DrinkRandom].strMeasure5 + "<br>"
+                                       + response.drinks[DrinkRandom].strIngredient6 + ": " + response.drinks[DrinkRandom].strMeasure6 + "<br>"
+                                       + response.drinks[DrinkRandom].strIngredient7 + ": " + response.drinks[DrinkRandom].strMeasure7 + "<br>"
+                                       + response.drinks[DrinkRandom].strIngredient8 + ": " + response.drinks[DrinkRandom].strMeasure8 + "<br>"
+                                       + response.drinks[DrinkRandom].strIngredient9 + ": " + response.drinks[DrinkRandom].strMeasure9 + "<br>"
+                                       + response.drinks[DrinkRandom].strIngredient10 + ": " + response.drinks[DrinkRandom].strMeasure10 + "<br>"
+                                       + response.drinks[DrinkRandom].strIngredient11 + ": " + response.drinks[DrinkRandom].strMeasure11 + "<br>"
+                                       + response.drinks[DrinkRandom].strIngredient12 + ": " + response.drinks[DrinkRandom].strMeasure12 + "<br>"
+                                       + response.drinks[DrinkRandom].strIngredient13 + ": " + response.drinks[DrinkRandom].strMeasure13 + "<br>"
+                                       + response.drinks[DrinkRandom].strIngredient14 + ": " + response.drinks[DrinkRandom].strMeasure14 + "<br>"
+                                       + response.drinks[DrinkRandom].strIngredient15 + ": " + response.drinks[DrinkRandom].strMeasure15 + "<br>" */);
+                                     
     });
 
 }

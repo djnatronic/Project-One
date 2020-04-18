@@ -47,8 +47,6 @@ main {
 }
 
 p {
-    font-size: 20px;
-    font-weight: bold;
     color: white;
 }
 
@@ -66,6 +64,9 @@ label {
 
 .question {
     padding-left: 40px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
 }
 
 .center-cols > .col {
@@ -91,6 +92,7 @@ label {
     padding-left: 5rem;
     padding-right: 5rem;
     font-weight: bold;
+    border: 2px solid #e7e7e7;
 }
 
 .buttonRes:active {
@@ -99,6 +101,8 @@ label {
 
 .pumpkin {
     background-color: #e9724c;
+    font-size: 20px;
+    font-weight: bold;
 }
 
 .darkRed {
