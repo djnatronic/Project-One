@@ -9,7 +9,6 @@ body {
 }
 
 .neons {
-   margin-top: 10rem;
    text-align: center;
    font-family: 'Codystar';
 }
@@ -28,7 +27,7 @@ body {
       color: #fff;
     text-shadow: 0 0 10px #00fff2, 0 0 20px #00fff2, 0 0 30px #00fff2, 0 0 40px #00fff2, 0 0 50px #00fff2, 0 0 60px #00fff2, 0 0 70px #00fff2, 0 0 90px #00fff2;
   }
-  
+
   to {
      color: gray;
     text-shadow: 0 0 20px #00fff2, 0 0 30px #00fff2, 0 0 40px #00fff2, 0 0 50px #00fff2, 0 0 60px #00fff2, 0 0 70px #00fff2, 0 0 80px #00fff2, 0 1 90px #00fff2;
@@ -60,13 +59,14 @@ hr {
 label {
     margin-left: 1.5rem;
     color: black;
-    
+
 }
 
 .question {
     padding-left: 40px;
     font-size: 20px;
     font-weight: bold;
+    color: white;
 }
 
 .center-cols > .col {
@@ -92,6 +92,7 @@ label {
     padding-left: 5rem;
     padding-right: 5rem;
     font-weight: bold;
+    border: 2px solid #e7e7e7;
 }
 
 .buttonRes:active {
@@ -102,7 +103,6 @@ label {
     background-color: #e9724c;
     font-size: 20px;
     font-weight: bold;
-    color: white;
 }
 
 .darkRed {
@@ -165,4 +165,4 @@ th {
 
 tr:nth-child(even) {
   background-color: #f2f2f2;
-}
+} 
