@@ -3,6 +3,8 @@ Group: Nathan, Cameron and Julie.<br/>
 
 Link to application: https://julieritz.github.io/Project-One/
 
+Link to presentation: https://docs.google.com/presentation/d/1uqIIp3Ufsmu0aUsKF3b2n1JYIAdHMwG92ZaZOkaYoO0/
+
 # Date Night Helper
 Project Acceptance Criteria/User Story:<br/> 
 
@@ -29,4 +31,4 @@ THEN results are pulled and displayed to the user in the app.<br/>
 CSS framework used: Materialize.
 APIs used: Recipe Puppy & The Cocktail DB.
 
-![image](https://user-images.githubusercontent.com/60047114/79532322-9761b980-8029-11ea-896b-ae651ddb0372.png)
+![image](https://media.giphy.com/media/Wn6xJFjaposVsy7L1I/giphy.gif)
